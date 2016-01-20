@@ -25,6 +25,9 @@
     if (self) {
         UINavigationItem *navItem = self.navigationItem;
         navItem.title = @"ETT Pivots";
+        self.accessibilityLabel = navItem.title;
+        self.tableView.accessibilityIdentifier = @"PivotsTable";
+        self.tableView.accessibilityLabel = @"PivotsTable";
     }
     return self;
 }
@@ -37,7 +40,6 @@
     [super viewDidLoad];
     [self.tableView registerClass:[UITableViewCell class]  forCellReuseIdentifier:@"cellReuse"];
     [self loadPivotsFromParse];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

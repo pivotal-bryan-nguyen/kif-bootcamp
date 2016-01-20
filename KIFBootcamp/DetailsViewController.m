@@ -25,8 +25,8 @@
     if (self) {
         UINavigationItem *navItem = self.navigationItem;
         navItem.title = @"DETAILS";
+        self.accessibilityLabel = @"DETAILS";
     }
-    
     return self;
 }
 
@@ -38,6 +38,7 @@
     self.projectsLabel.text = [NSString stringWithFormat:@"%@", self.pivot.projectsLeading];
     self.submitButton.layer.cornerRadius = 3;
     // Do any additional setup after loading the view from its nib.
+    self.commentField.accessibilityLabel = @"Comment Field";
 }
 
 - (void)didReceiveMemoryWarning {
