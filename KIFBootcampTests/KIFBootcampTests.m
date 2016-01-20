@@ -25,17 +25,21 @@
     [super tearDown];
 }
 
-#pragma mark - Task #0
+#pragma mark - Task #0: Setup
 
+/*
+ * Launch and wait
+ */
 - (void)testLaunchAppAndWait{
-    // Launch and wait
     [tester waitForTimeInterval:5];
 }
 
 #pragma mark - Task #1
 
+/*
+ * Check pivots info (job title, projects)
+ */
 - (void)testSelectPivotCheckInfo {
-    // Check pivots info
     [tester waitForViewWithAccessibilityLabel:@"Gordon Krull"];
     [tester tapViewWithAccessibilityLabel:@"Gordon Krull"];
     [tester waitForViewWithAccessibilityLabel:@"KIF Automator"];
@@ -44,13 +48,14 @@
 
 #pragma mark - Task #2
 
+/*
+ * Adding accessiblityLabels and iterating through the table of pivots
+ */
 - (void)testAddAccessibilityLabels {
-    // Adding accessiblityLabels
     [tester waitForViewWithAccessibilityLabel:@"ETT Pivots"];
     UITableView *table = (UITableView *)[tester waitForViewWithAccessibilityLabel:@"PivotsTable"];
     NSInteger numRow = [table numberOfRowsInSection:0];
 
-    // Tap on rows of pivots
     for (unsigned int i = 0; i < numRow; i++){
         [tester tapRowAtIndexPath: [NSIndexPath indexPathForRow:i inSection:0]inTableViewWithAccessibilityIdentifier:@"PivotsTable"];
         [tester waitForViewWithAccessibilityLabel:@"DETAILS"];
