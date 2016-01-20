@@ -3,7 +3,7 @@
 target 'KIFBootcamp' do
 
 pod 'Parse'
-
+pod 'Nocilla'
 end
 
 target 'KIFBootcampTests', :exclusive => true do 
