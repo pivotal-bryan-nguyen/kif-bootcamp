@@ -1,6 +1,6 @@
 //
-//  KIFBootcampTests.m
-//  KIFBootcampTests
+//  Step1.m
+//  KIFBootcamp
 //
 //  Created by Pivotal on 2016-01-19.
 //  Copyright © 2016 PIvotal Labs. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 #import <KIF/KIF.h>
-@interface KIFBootcampTests : XCTestCase
+@interface Step1 : KIFUITestActor
 
 @end
 
-@implementation KIFBootcampTests
+@implementation Step1
 
 - (void)setUp {
     [super setUp];
@@ -24,17 +24,15 @@
     [super tearDown];
 }
 
-- (void)testLaunchAppAndWait{
-    NSLog(@"Waiting for 5");
-    [tester waitForTimeInterval:5];
+- (void)testExample {
+    // This is an example of a functional test case.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
-- (void)testSelectPivotCheckInfo {
-    NSLog(@"Looking for Gordon Krull");
-    [tester waitForViewWithAccessibilityLabel:@"Gordon Krull"];
-    [tester tapViewWithAccessibilityLabel:@"Gordon Krull"];
-    [tester waitForViewWithAccessibilityLabel:@"KIF Automator"];
-    [tester waitForViewWithAccessibilityLabel:@"3"];
+- (void)selectPivotCheckInfo
+{
+    [tester waitForAccessibilityLabel]
+    NSLog(@"Gordon Krull loaded");
 }
 
 - (void)testPerformanceExample {
