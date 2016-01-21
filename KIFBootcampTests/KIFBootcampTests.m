@@ -8,7 +8,6 @@
 
 
 #import <KIF/KIF.h>
-#import "Nocilla.h"
 @interface KIFBootcampTests : KIFTestCase
 @end
 

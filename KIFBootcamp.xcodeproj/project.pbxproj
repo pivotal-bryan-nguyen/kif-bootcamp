@@ -18,6 +18,10 @@
 		3D6BAEA41C32EAFA008AAF0A /* BootcampTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BAEA21C32EAFA008AAF0A /* BootcampTableViewController.m */; };
 		3D6BAEA51C32EAFA008AAF0A /* BootcampTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6BAEA31C32EAFA008AAF0A /* BootcampTableViewController.xib */; };
 		AE67DF481C4EF13C0003288A /* KIFBootcampTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE67DF471C4EF13C0003288A /* KIFBootcampTests.m */; };
+		AE67DF561C503C3A0003288A /* NocillaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE67DF551C503C3A0003288A /* NocillaTests.m */; settings = {ASSET_TAGS = (); }; };
+		AE67DF5A1C5136E50003288A /* pivots.json in Resources */ = {isa = PBXBuildFile; fileRef = AE67DF591C5136E50003288A /* pivots.json */; settings = {ASSET_TAGS = (); }; };
+		AE67DF5B1C5139D90003288A /* pivots.json in Resources */ = {isa = PBXBuildFile; fileRef = AE67DF591C5136E50003288A /* pivots.json */; settings = {ASSET_TAGS = (); }; };
+		AE67DF5D1C515E8E0003288A /* pivots.txt in Resources */ = {isa = PBXBuildFile; fileRef = AE67DF5C1C515E8E0003288A /* pivots.txt */; settings = {ASSET_TAGS = (); }; };
 		CA756D166EE20AAC879E8DE4 /* libPods-KIFBootcampTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 157643AB05EDCCF192F07525 /* libPods-KIFBootcampTests.a */; };
 		D2787351B732A525FF89B2D9 /* libPods-KIFBootcamp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1012512934A4CC3F4D0DE878 /* libPods-KIFBootcamp.a */; };
 /* End PBXBuildFile section */
@@ -58,6 +62,9 @@
 		AE67DF451C4EF13C0003288A /* KIFBootcampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFBootcampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE67DF471C4EF13C0003288A /* KIFBootcampTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIFBootcampTests.m; sourceTree = "<group>"; };
 		AE67DF491C4EF13C0003288A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE67DF551C503C3A0003288A /* NocillaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NocillaTests.m; sourceTree = "<group>"; };
+		AE67DF591C5136E50003288A /* pivots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = pivots.json; path = KIFBootcampTests/pivots.json; sourceTree = SOURCE_ROOT; };
+		AE67DF5C1C515E8E0003288A /* pivots.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pivots.txt; sourceTree = "<group>"; };
 		DC8337748198F8C164A11738 /* Pods-KIFBootcampTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFBootcampTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIFBootcampTests/Pods-KIFBootcampTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +162,9 @@
 			children = (
 				AE67DF471C4EF13C0003288A /* KIFBootcampTests.m */,
 				AE67DF491C4EF13C0003288A /* Info.plist */,
+				AE67DF551C503C3A0003288A /* NocillaTests.m */,
+				AE67DF591C5136E50003288A /* pivots.json */,
+				AE67DF5C1C515E8E0003288A /* pivots.txt */,
 			);
 			path = KIFBootcampTests;
 			sourceTree = "<group>";
@@ -258,6 +268,7 @@
 			files = (
 				3D6BAEA51C32EAFA008AAF0A /* BootcampTableViewController.xib in Resources */,
 				3D6BAE991C29B4AD008AAF0A /* DetailsViewController.xib in Resources */,
+				AE67DF5B1C5139D90003288A /* pivots.json in Resources */,
 				3D6BAE781C288447008AAF0A /* LaunchScreen.storyboard in Resources */,
 				3D6BAE751C288447008AAF0A /* Assets.xcassets in Resources */,
 			);
@@ -267,6 +278,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE67DF5A1C5136E50003288A /* pivots.json in Resources */,
+				AE67DF5D1C515E8E0003288A /* pivots.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE67DF561C503C3A0003288A /* NocillaTests.m in Sources */,
 				AE67DF481C4EF13C0003288A /* KIFBootcampTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
