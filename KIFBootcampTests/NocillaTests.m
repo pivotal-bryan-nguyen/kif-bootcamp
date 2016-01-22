@@ -6,7 +6,6 @@
 //  Copyright © 2016 PIvotal Labs. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
 #import <KIF/KIF.h>
 #import "Nocilla.h"
 @interface NocillaTests : KIFTestCase
@@ -31,12 +30,15 @@
 {
     NSLog(@"Starting!!!!");
     NSBundle* myBundle = [NSBundle bundleWithPath:@"/Users/pivotal/Desktop/kif-bootcamp/KIFBootcampTests"];
-    NSString *filePath = [myBundle pathForResource:@"pivots" ofType:@"txt"];
+    NSString *filePath = [myBundle pathForResource:@"pivots" ofType:@"json"];
     NSLog(@"%@",filePath);
     NSData *MyData = [NSData dataWithContentsOfFile:filePath];
+    NSString *strData = [[NSString alloc]initWithData:MyData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@", strData);
     
     stubRequest(@"POST", @"https://api.parse.com/1/classes/QA_Pivots").
     andReturnRawResponse(MyData);
+    stubRequest(@"POST", @"*").andReturnRawResponse(MyData);
     [tester waitForTimeInterval:5];
 }
 
